@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "ENGINE DIAGNOSTIC",
+        "price": "300",
+        "description": "Diagnose car problems without going to a mechanic with an auto code reader. Simply plug it into the car's computer system, then interpret the trouble code readout to see what repairs you might need to do. See how to crack the code of a code reader here. ",
+        "img": "https://i.ibb.co/dGDkr4v/1.jpg"
+    },
+    {
+        "id": 2,
+        "name": "WHEEL ALIGNMENT",
+        "price": "100",
+        "description": "It's easy to tell when your blades need replacing. Simply press the washer button and see if your blades wipe clean. If they streak, they're toast. The auto parts store will have lots of economy blades, but go with a name brand instead (ANCO, Trico or Bosch). They cost more than economy blades, but their higher-quality rubber wipes better, has better UV protection and lasts longer.",
+        "img": "https://i.ibb.co/tY8dmnP/2.jpg"
+    },
+    {
+        "id": 3,
+        "name": "OIL CHANGING",
+        "price": "150",
+        "description": "Rough idle? A good dousing with throttle body cleaner may be enough to restore your EGR valve to near-mint condition, transforming a harsh idle into a soothing hum. Clean an EGR valve with these instructions for one of those easier car repairs.",
+        "img": "https://i.ibb.co/Yh04YVw/3.jpg"
+    },
+    {
+        "id": 4,
+        "name": "BRAKE REPARING",
+        "price": "180",
+        "description": "Loosen and lubricate a corroded spare tire lift so you can get to your spare tire when you need it. See how to keep that spare tire lift loose so you can get the tire when you need it.",
+        "img": "https://i.ibb.co/ZX2Cbkn/4.jpg"
+    },
+    {
+        "id": 5,
+        "name": "WASH AND GLASSING",
+        "price": "100",
+        "description": "Fixing a clunk when your car hits a bump is a trial and error process. Start with the stabilizer bushings and then the bar end links, using a special tool. Replacing sway bar links is way cheaper than you think, see how to replace sway bar links and how much it costs.",
+        "img": "https://i.ibb.co/FgQ3jXp/5.jpg"
+    },
+    {
+        "id": 6,
+        "name": "COMPLETE ANALYSIS",
+        "price": "300",
+        "description": "Simply clean the ground connection to restore the brightness of dim headlights. And apply a little dielectric grease. Or replace the bulb if you see a gray/brown film on the inside of the glass. See how to locate the ground connection and how to clean it.",
+        "img": "https://i.ibb.co/zJy5ZDd/6.jpg"
+    }
+]
