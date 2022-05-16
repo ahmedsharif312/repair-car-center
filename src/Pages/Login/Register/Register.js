@@ -5,6 +5,7 @@ import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-fireb
 import auth from '../../../firebase.init'
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { sendEmailVerification, updateProfile } from 'firebase/auth';
+import PageHelmat from '../../Shared/PageHelmate/PageHelmat';
 
 const Register = () => {
     const [agree, setAgree] = useState(false);
@@ -43,6 +44,7 @@ const Register = () => {
     }
     return (
         <div className='container w-50 mt-3 mx-auto'>
+            <PageHelmat title='Register' />
             <h2 className='text-warning text-center '>Register</h2>
             <Form onSubmit={handleRegister}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

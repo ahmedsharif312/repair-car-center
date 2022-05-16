@@ -6,6 +6,7 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import PageHelmat from '../../Shared/PageHelmate/PageHelmat';
 
 const Login = () => {
 
@@ -56,6 +57,7 @@ const Login = () => {
     }
     return (
         <div className='container w-50 mt-3 mx-auto'>
+            <PageHelmat title='Login' />
             <h2 className='text-warning text-center '>Login</h2>
             <Form onClick={handleSubmit}>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -8,4 +8,4 @@ const CheckOut = () => {
     );
 };
 
-export default CheckOut;
+export default CheckOut; 
