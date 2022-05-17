@@ -16,8 +16,22 @@ const RequireAuth = ({ children }) => {
     if (!user) {
         return <Navigate to="/login" state={{ from: location }} replace />;
     }
+    // console.log(user);
 
-    if (!user.emailVerified) {
+
+    /**
+      We need to verify only email and password this is valid email or not. wWe don't 
+      want to verify google so we can use:
+      if(user.providerData[0].providerId ==='password' && !user.emailVerified){
+
+      }
+      When you do console user you will find the provideData and provideId.
+      ScreenShot link: https://prnt.sc/eF1El8cxpzrm
+     */
+
+
+
+    if (user.providerData[0].providerId === 'password' && !user.emailVerified) {
         return <div>
             <h2 className='text-primary text-center'>Please Check Your Email</h2>
             <button
