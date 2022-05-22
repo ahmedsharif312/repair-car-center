@@ -10,14 +10,14 @@ const ManageService = () => {
     const handleDelete = id => {
         const process = window.confirm('Are you going to delete');
         if (process) {
-            const url = `http://localhost:5000/service/${id}`;
+            const url = `https://boiling-headland-53562.herokuapp.com/service/${id}`;
             console.log(url);
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
-                    console.log(data);
+                    // console.log(data);
                     const remaining = services.filter(service => service._id !== id);
                     setServices(remaining)
                 })

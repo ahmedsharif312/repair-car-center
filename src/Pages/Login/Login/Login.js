@@ -4,9 +4,10 @@ import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
-import { ToastContainer, toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import PageHelmat from '../../Shared/PageHelmate/PageHelmat';
+import axios from 'axios';
 
 const Login = () => {
 
@@ -34,11 +35,15 @@ const Login = () => {
         </div>
     }
 
-    const handleSubmit = event => {
+    const handleSubmit = async event => {
         event.preventDefault();
         const email = emailRef.current.value;
         const password = passwordRef.current.value;
-        signInWithEmailAndPassword(email, password)
+
+        signInWithEmailAndPassword(email, password);
+        // await signInWithEmailAndPassword(email, password);
+        // const { data } = await axios.post('https://boiling-headland-53562.herokuapp.com/login', { email })
+        // console.log(data);
     }
 
     const handleRegister = event => {
@@ -77,7 +82,7 @@ const Login = () => {
             <p>Forget <button className='btn btn-link text-warning text-decoration-none' onClick={resetPassword}>Forgot Password</button></p>
             <p>New in Repair Car? <Link to="/register" className='text-danger text-decoration-none' onClick={handleRegister}>Register Now</Link></p>
             <SocialLogin />
-            <ToastContainer />
+
         </div>
     );
 };
